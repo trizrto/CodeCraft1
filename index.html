@@ -16,18 +16,38 @@
     <!-- Header -->
     <header class="header">
       <div class="logo">
-        <img src="/img/logo.png">
+        <span>CodeCraft</span>
       </div>
-      <nav class="menu">
-        <span>MENU</span>
-        <span>Apresentação (alunos/professores)</span>
-        <span>Logo colégio</span>
-      </nav>
+      
+      <div class="header-nav">
+        <!-- Menu hamburger para mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" onclick="showSection('home')">Home</a>
+          <a href="#apresentacao" onclick="showSection('apresentacao')">Apresentação</a>
+          <a href="#equipe" onclick="showSection('equipe')">Equipe</a>
+          <a href="#objetivos" onclick="showSection('objetivos')">Objetivos</a>
+          <a href="#contato" onclick="showSection('contato')">Contato</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="content-grid">
+      <!-- Seção Home -->
+      <div id="home" class="content-section active">
+        <div class="intro-section">
+          <h1>Bem-vindos ao CodeCraft</h1>
+          <p>Conheça nossa equipe de desenvolvimento e nossos projetos inovadores.</p>
+        </div>
+        
+        <div class="content-grid">
         <!-- Left Column -->
         <div class="left-column">
           <div class="profile-card">
@@ -114,6 +134,105 @@
           </div>
         </div>
       </div>
+
+      <!-- Seção Apresentação -->
+      <div id="apresentacao" class="content-section">
+        <h1>Apresentação</h1>
+        <div class="presentation-content">
+          <p>O CodeCraft é uma empresa formada por estudantes apaixonados por tecnologia e inovação. Nossa missão é desenvolver soluções criativas e eficientes para os desafios do mundo digital.</p>
+          <div class="company-info">
+            <h3>Nossa Visão</h3>
+            <p>Ser reconhecidos como uma empresa jovem e inovadora no desenvolvimento de software e soluções tecnológicas.</p>
+            <h3>Nossos Valores</h3>
+            <ul>
+              <li>Inovação e criatividade</li>
+              <li>Trabalho em equipe</li>
+              <li>Excelência técnica</li>
+              <li>Compromisso com resultados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção Equipe -->
+      <div id="equipe" class="content-section">
+        <h1>Nossa Equipe</h1>
+        <p>Conheça os talentos que fazem parte do CodeCraft:</p>
+        <div class="content-grid">
+          <div class="left-column">
+            <div class="profile-card">
+              <div class="profile-image"></div>
+              <div class="profile-text">
+                <h3>Programador</h3>
+                <p>Renato Augusto de Oliveira, 16 anos. Especialista em desenvolvimento front-end e back-end.</p>
+              </div>
+            </div>
+            <div class="profile-card">
+              <div class="profile-image"></div>
+              <div class="profile-text">
+                <h3>Designer Senior</h3>
+                <p>Gabrielly Cristina Ribeiro, 15 anos. Responsável pelo design e experiência do usuário.</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="profile-card">
+              <div class="profile-image"></div>
+              <div class="profile-text">
+                <h3>Gerente</h3>
+                <p>José Gabriel Morais dos Santos, 16 anos. Lidera nossa equipe e coordena projetos.</p>
+              </div>
+            </div>
+            <div class="profile-card">
+              <div class="profile-image"></div>
+              <div class="profile-text">
+                <h3>Sub-gerente</h3>
+                <p>Ana Clara Barbosa Borges, 15 anos. Auxilia na gestão e documentação dos projetos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção Objetivos -->
+      <div id="objetivos" class="content-section">
+        <h1>Nossos Objetivos</h1>
+        <div class="objectives-content">
+          <div class="objective-card">
+            <h3>Desenvolvimento Profissional</h3>
+            <p>Aprimorar constantemente nossas habilidades técnicas e soft skills através de projetos desafiadores.</p>
+          </div>
+          <div class="objective-card">
+            <h3>Inovação Tecnológica</h3>
+            <p>Criar soluções inovadoras que façam a diferença no mercado de tecnologia.</p>
+          </div>
+          <div class="objective-card">
+            <h3>Crescimento Sustentável</h3>
+            <p>Construir uma base sólida para o crescimento da empresa e oportunidades futuras.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção Contato -->
+      <div id="contato" class="content-section">
+        <h1>Entre em Contato</h1>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+            <p>Email: contato@codecraft.com</p>
+            <p>Website: www.codecraft/amostra.com</p>
+          </div>
+          <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+            <form>
+              <input type="text" placeholder="Seu nome" required>
+              <input type="email" placeholder="Seu email" required>
+              <textarea placeholder="Sua mensagem" required></textarea>
+              <button type="submit">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -124,6 +243,51 @@
       </div>
     </footer>
   </div>
+<script>
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.getElementById('navMenu');
+
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    }
+
+    function showSection(sectionId) {
+      // Esconder todas as seções
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Mostrar a seção selecionada
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      // Fechar menu mobile se estiver aberto
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.getElementById('navMenu');
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+
+      // Atualizar links ativos
+      const links = document.querySelectorAll('.nav-menu a');
+      links.forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    }
+
+    // Inicializar com a seção home ativa
+    document.addEventListener('DOMContentLoaded', function() {
+      showSection('home');
+    });
+  </script>
 </body>
 
 </html>
