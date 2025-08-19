@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeCraft - Menu</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="menu.css" rel="stylesheet" type="text/css" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header com Menu -->
+    <header class="header">
+      <div class="logo">
+        <span>CodeCraft</span>
+      </div>
+
+      <div class="header-nav">
+        <!-- Menu hamburger para mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="nav-menu" id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="#apresentacao">Apresentação</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <div class="content-section">
+        <h1>Menu de Navegação</h1>
+        <p>Bem-vindo ao CodeCraft! Use o menu acima para navegar pelas diferentes seções do nosso site.</p>
+
+        <div class="menu-sections">
+          <div class="section-card">
+            <h3>Apresentação</h3>
+            <p>Conheça mais sobre nossa empresa e missão.</p>
+          </div>
+
+          <div class="section-card">
+            <h3>Equipe</h3>
+            <p>Conheça os membros da nossa equipe e suas especialidades.</p>
+          </div>
+
+          <div class="section-card">
+            <h3>Projetos</h3>
+            <p>Veja nossos projetos e trabalhos realizados.</p>
+          </div>
+
+          <div class="section-card">
+            <h3>Contato</h3>
+            <p>Entre em contato conosco para mais informações.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <span>www.codecraft/amostra.com</span>
+        <div class="footer-box"></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.getElementById('navMenu');
+
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    }
+
+    // Fechar menu ao clicar em um link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
