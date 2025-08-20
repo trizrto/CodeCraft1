@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeCraft - Empresa</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span>CodeCraft</span>
+      </div>
+      
+      <div class="header-nav">
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="apresentacao.html">Apresentação</a>
+          <a href="professores.html">Professores</a>
+          <a href="empresa.html" class="active">Empresa</a>
+          <a href="equipe.html">Equipe</a>
+        </nav>
+        
+        <div class="logo-colegio">
+          <span>Logo colégio</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Company Content -->
+    <main class="company-page">
+      <div class="page-header">
+        <h1>CodeCraft - Nossa Empresa</h1>
+        <p>Conheça a história, missão e valores da nossa organização</p>
+      </div>
+
+      <div class="company-content">
+        <!-- Sobre a Empresa -->
+        <section class="about-company">
+          <div class="company-hero">
+            <div class="company-logo-large">
+              <div class="logo-display-large">
+                <span>CodeCraft</span>
+                <p>Crafting the Future</p>
+              </div>
+            </div>
+            <div class="company-description">
+              <h2>Sobre Nós</h2>
+              <p>A CodeCraft é uma empresa jovem e inovadora, nascida da paixão de estudantes pela tecnologia. Fundada em 2024, nossa missão é democratizar o acesso à educação tecnológica e criar soluções digitais que impactem positivamente a sociedade.</p>
+              <p>Como uma startup educacional, combinamos criatividade, conhecimento técnico e visão empreendedora para desenvolver projetos que preparam os jovens para o futuro digital.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section class="company-values">
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">🎯</div>
+              <h3>Nossa Missão</h3>
+              <p>Capacitar jovens através da tecnologia, fornecendo ferramentas e conhecimentos para criar soluções inovadoras que transformem a sociedade.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">🔮</div>
+              <h3>Nossa Visão</h3>
+              <p>Ser referência em educação tecnológica, formando uma nova geração de desenvolvedores, designers e empreendedores digitais.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">⭐</div>
+              <h3>Nossos Valores</h3>
+              <ul>
+                <li>Inovação constante</li>
+                <li>Colaboração e trabalho em equipe</li>
+                <li>Acessibilidade e inclusão</li>
+                <li>Excelência em qualidade</li>
+                <li>Responsabilidade social</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="company-services">
+          <h2>Nossos Serviços</h2>
+          <div class="services-grid">
+            <div class="service-item">
+              <div class="service-icon">💻</div>
+              <h4>Desenvolvimento Web</h4>
+              <p>Criação de sites e aplicações web responsivas e modernas</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">🎨</div>
+              <h4>Design UX/UI</h4>
+              <p>Design de interfaces intuitivas e experiências digitais marcantes</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">📚</div>
+              <h4>Educação Digital</h4>
+              <p>Workshops e cursos de programação para jovens e iniciantes</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">🚀</div>
+              <h4>Consultoria em Inovação</h4>
+              <p>Apoio a outras organizações em projetos de transformação digital</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conquistas -->
+        <section class="company-achievements">
+          <h2>Nossas Conquistas</h2>
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <div class="achievement-number">10+</div>
+              <p>Projetos Desenvolvidos</p>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-number">50+</div>
+              <p>Estudantes Impactados</p>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-number">3</div>
+              <p>Prêmios Recebidos</p>
+            </div>
+            <div class="achievement-item">
+              <div class="achievement-number">100%</div>
+              <p>Satisfação dos Clientes</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="company-contact">
+          <h2>Entre em Contato</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h4>Informações de Contato</h4>
+              <div class="contact-item">
+                <span>📧</span>
+                <p>contato@codecraft.com</p>
+              </div>
+              <div class="contact-item">
+                <span>📱</span>
+                <p>(11) 99999-9999</p>
+              </div>
+              <div class="contact-item">
+                <span>🌐</span>
+                <p>www.codecraft.com</p>
+              </div>
+              <div class="contact-item">
+                <span>📍</span>
+                <p>São Paulo, SP - Brasil</p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h4>Envie uma Mensagem</h4>
+              <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <span>www.codecraft/amostra.com</span>
+        <div class="footer-box"></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
