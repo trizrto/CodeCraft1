@@ -1,4 +1,3 @@
-
 .quicksand-<uniquifier> {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -14,12 +13,13 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 50%, #87CEEB 100%);
+  background: linear-gradient(100deg, #87CEEB 0%, #4682B4 50%, #87CEEB 100%);
   color: white;
   line-height: 1.6;
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  display: flex;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 /* Header Styles */
@@ -36,7 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(176, 224, 230, 0.8);
-  padding: 15px 30px;
+  padding: 15px 90px;
   margin: 0;
   position: relative;
   transition: box-shadow 0.3s ease;
@@ -45,20 +46,17 @@ body {
 
 .logo {
   background-color: rgba(211, 211, 211, 0.9);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: #333;
-  font-weight: bold;
-  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo img {
-  height: 40px;
-  width: auto;
-  max-width: 120px;
+  height: auto;
+  width: 60%;
+  max-width: 170px;
   object-fit: contain;
 }
 
@@ -168,7 +166,7 @@ body {
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Main Content */
@@ -383,7 +381,8 @@ body {
   border-radius: 15px;
 }
 
-.project-details h2, .project-details h3 {
+.project-details h2,
+.project-details h3 {
   color: #333;
   margin-bottom: 15px;
 }
@@ -550,7 +549,7 @@ body {
   margin-bottom: 20px;
 }
 
-.support-section > p {
+.support-section>p {
   color: #555;
   text-align: center;
   margin-bottom: 30px;
@@ -796,7 +795,8 @@ body {
   gap: 40px;
 }
 
-.contact-info h4, .contact-form h4 {
+.contact-info h4,
+.contact-form h4 {
   color: #333;
   margin-bottom: 20px;
   font-size: 1.3rem;
@@ -1631,7 +1631,9 @@ body {
 }
 
 /* High DPI Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
   .logo-placeholder,
   .photo-placeholder {
     image-rendering: -webkit-optimize-contrast;
@@ -1641,6 +1643,7 @@ body {
 
 /* Print Styles */
 @media print {
+
   .menu-toggle,
   .nav-menu,
   .footer {
@@ -1662,4 +1665,11 @@ body {
   .main-content {
     background: white;
   }
+}
+.cc{
+  width: 100%;
+  align-items: justify;
+  padding-left: 20px;
+
+  
 }
