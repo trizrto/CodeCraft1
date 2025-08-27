@@ -973,29 +973,7 @@ body {
   font-weight: 500;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  background: rgba(176, 224, 230, 0.8);
-  padding: 1em 150em;
-}
 
-.copyright {
-  color: #FFFFFF;
-  font-size: 13px;
-  margin: 20px 0 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-content span {
-  color: #333;
-  font-weight: 500;
-}
 
 
 /* Responsive Design */
