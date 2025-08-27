@@ -50,20 +50,12 @@ body {
   width: 100%;
 }
 
-.logo {
-  background-color: rgba(211, 211, 211, 0.9);
-  padding: 5px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo img {
   height: auto;
   width: 60%;
   max-width: 170px;
   object-fit: contain;
+  align-items: center;
 }
 
 .header-nav {
@@ -73,12 +65,10 @@ body {
 }
 
 .logo-colegio {
-  background-color: rgba(211, 211, 211, 0.7);
-  padding: 8px 15px;
-  border-radius: 6px;
-  color: #333;
-  font-size: 14px;
-  font-weight: 500;
+ height: auto;
+ width: 80%;
+  align-items: justify;
+  padding-left: 100px;
 }
 
 /* Menu Styles */
@@ -980,11 +970,16 @@ body {
 }
 
 /* Footer */
-.footer {
-  background-color: rgba(176, 224, 230, 0.8);
-  padding: 20px;
-  margin: 0;
-  width: 100%;
+footer {
+  text-align: center;
+  background: rgba(176, 224, 230, 0.8);
+  padding: 1em 150em;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
 }
 
 .footer-content {
@@ -998,12 +993,6 @@ body {
   font-weight: 500;
 }
 
-.footer-box {
-  width: 150px;
-  height: 40px;
-  background-color: rgba(211, 211, 211, 0.8);
-  border-radius: 5px;
-}
 
 /* Responsive Design */
 
@@ -1469,13 +1458,7 @@ body {
   .support-grid {
     grid-template-columns: 1fr;
   }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
+  
   .page-header {
     padding: 20px 15px;
     margin-bottom: 25px;
@@ -1671,11 +1654,4 @@ body {
   .main-content {
     background: white;
   }
-}
-.cc{
-  width: 100%;
-  align-items: justify;
-  padding-left: 20px;
-
-  
 }
