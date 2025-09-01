@@ -26,15 +26,15 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
+  width: 100vw;
+  max-width: none;
   background: linear-gradient(135deg, #D0D5EB 0%, #D0D5EB 50%, #D0D5EB 100%);
   min-height: 100vh;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* Header Styles */
@@ -43,11 +43,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #9FCADA;
-  padding: 15px 90px;
+  padding: 15px 5%;
   margin: 0;
   position: relative;
   transition: box-shadow 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .logo img {
@@ -129,10 +130,11 @@ body {
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #9E98D6 0%, #99ADE0 100%);
-  padding: 60px 40px;
+  padding: 60px 5%;
   text-align: center;
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-content h1 {
@@ -168,9 +170,10 @@ body {
 /* Main Content */
 .main-content {
  background: linear-gradient(135deg, #e6f3ff 0%, #D0D5EB 50%, #D0D5EB 100%);;
-  padding: 30px;
+  padding: 30px 5%;
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Home Page Grid */
@@ -1006,11 +1009,6 @@ footer {
 
 /* Extra Large Screens - 1920px and above */
 @media (min-width: 1920px) {
-  .container {
-    max-width: 1600px;
-    padding: 40px;
-  }
-
   .hero-content h1 {
     font-size: 4rem;
   }
@@ -1024,7 +1022,11 @@ footer {
   }
 
   .main-content {
-    padding: 50px;
+    padding: 50px 5%;
+  }
+
+  .hero-section {
+    padding: 80px 5%;
   }
 
   .content-grid-home {
@@ -1038,11 +1040,6 @@ footer {
 
 /* Large Screens - 1440px to 1919px */
 @media (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-    max-width: 1400px;
-    padding: 30px;
-  }
-
   .hero-content h1 {
     font-size: 3.5rem;
   }
@@ -1058,10 +1055,6 @@ footer {
 
 /* Medium-Large Screens - 1200px to 1439px */
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .container {
-    padding: 25px;
-  }
-
   .content-grid-home {
     gap: 35px;
   }
