@@ -13,8 +13,8 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(100deg, #87CEEB 0%, #4682B4 50%, #87CEEB 100%);
-  color: white;
+  background: linear-gradient(100deg, #f0f8ff 0%, #e6f3ff 50%, #f0f8ff 100%);
+  color: #333;
   line-height: 1.6;
   min-height: 100vh;
   width: 100vw;
@@ -28,7 +28,7 @@ body {
 .container {
   width: 100%;
   max-width: 1920px;
-  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 50%, #87CEEB 100%);
+  background: linear-gradient(135deg, #D0D5EB 0%, #D0D5EB 50%, #D0D5EB 100%);
   min-height: 100vh;
   padding: 0;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(176, 224, 230, 0.8);
+  background-color: #9FCADA;
   padding: 15px 90px;
   margin: 0;
   position: relative;
@@ -66,7 +66,7 @@ body {
 
 .logo-colegio {
  height: auto;
- width: 80%;
+ width: 70%;
   align-items: justify;
   padding-left: 100px;
 }
@@ -128,7 +128,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, rgba(176, 224, 230, 0.8) 0%, rgba(70, 130, 180, 0.6) 100%);
+  background: linear-gradient(135deg, #9E98D6 0%, #99ADE0 100%);
   padding: 60px 40px;
   text-align: center;
   margin: 0;
@@ -167,7 +167,7 @@ body {
 
 /* Main Content */
 .main-content {
-  background-color: rgba(176, 224, 230, 0.3);
+ background: linear-gradient(135deg, #e6f3ff 0%, #D0D5EB 50%, #D0D5EB 100%);;
   padding: 30px;
   margin: 0;
   width: 100%;
@@ -300,7 +300,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 30px 0;
-  background: linear-gradient(135deg, rgba(176, 224, 230, 0.6) 0%, rgba(70, 130, 180, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(70, 130, 180, 0.1) 0%, rgba(135, 206, 235, 0.15) 100%);
   width: 100%;
 }
 
@@ -478,12 +478,12 @@ body {
 }
 
 .teacher-card {
-  background-color: rgba(176, 224, 230, 0.6);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 15px;
   padding: 25px;
   transition: transform 0.3s ease;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .teacher-card:hover {
@@ -512,7 +512,6 @@ body {
   font-size: 1.3rem;
   margin-bottom: 8px;
   text-align: center;
-  font-weight: 600;
 }
 
 .teacher-subject {
@@ -536,12 +535,12 @@ body {
 }
 
 .support-section {
-  background-color: rgba(176, 224, 230, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(70, 130, 180, 0.2);
   padding: 30px;
   border-radius: 15px;
   margin-top: 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .support-section h2 {
@@ -974,8 +973,34 @@ body {
   font-weight: 500;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  background: #5B538C;
+  padding: 5px 0px;
+  width: 100%;
+  margin-top: auto;
+}
 
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 
+.copyright {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin:0;
+  padding-top: 1px;
+}
+
+.cc {
+  width: 40px;
+  height: 10px;
+}
+ 
 
 /* Responsive Design */
 
@@ -1637,31 +1662,4 @@ body {
   .main-content {
     background: white;
   }
-}
-/*footer*/
-.footer {
-  background: rgba(176, 224, 230, 0.95);
-  padding: 1.5em 0;
-  width: 100%;
-  text-align: center;
-  margin-top: auto; /* Para garantir que fique na parte inferior */
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.cc {
-  width: 24px;
-  height: 24px;
-}
-
-.copyright {
-  color: #2c3e50;
-  font-size: 14px;
-  margin: 0;
 }
