@@ -170,7 +170,7 @@ body {
 /* Main Content */
 .main-content {
  background: linear-gradient(135deg, #e6f3ff 0%, #D0D5EB 50%, #D0D5EB 100%);;
-  padding: 30px 2%;
+  padding: 30px 5%;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -183,9 +183,8 @@ body {
   grid-template-rows: auto auto;
   gap: 30px;
   width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0 2%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .group-photo-section {
@@ -490,10 +489,10 @@ body {
   gap: 30px;
   margin-bottom: 40px;
   width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 2%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 
 .teacher-card {
@@ -501,7 +500,7 @@ body {
   border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 15px;
   padding: 25px;
-  margin: 0; /* Remove margin for better grid fitting */
+  margin: 15px; /* Adiciona margem entre os cards e as bordas */
   transition: transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
