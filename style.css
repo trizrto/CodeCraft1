@@ -151,7 +151,7 @@ body {
 }
 
 .cta-button {
-  background: linear-gradient(45deg, #4682B4, #87CEEB);
+  background: linear-gradient(45deg, #4682B4, #99ADE0);
   color: white;
   border: none;
   padding: 15px 30px;
@@ -203,13 +203,21 @@ body {
   grid-column: 2;
   grid-row: 2;
 }
-
-.photo-placeholder {
+.foto-grupo{
   background-color: rgba(70, 130, 180, 0.7);
   border-radius: 12px;
-  padding: 80px 40px;
-  text-align: center;
-  color: white;
+}
+.foto-inicial{
+  width: 90%;
+  height: 80%;
+  border-radius: 6px;
+  padding:40px;
+  
+}
+.desenvolvimento{
+  width: 250px;
+  height: 220px;
+  border-radius: 6px;
 }
 
 .photo-placeholder h3 {
@@ -254,23 +262,22 @@ body {
   border-radius: 12px;
   color: white;
 }
+.logo2{
+  width:150px;
+  height:140px;
+}
 
 .logo-display {
   text-align: center;
 }
 
 .logo-placeholder {
-  background-color: rgba(135, 206, 235, 0.8);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  font-size: 36px;
   font-weight: bold;
-  color: #333;
+
 }
 
 .about-section {
@@ -475,16 +482,17 @@ body {
 
 .teachers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Altera para 3 colunas */
   gap: 30px;
   margin-bottom: 40px;
 }
 
 .teacher-card {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #9FCADA;
   border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 15px;
   padding: 25px;
+  margin: 15px; /* Adiciona margem entre os cards e as bordas */
   transition: transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -499,15 +507,15 @@ body {
 }
 
 .teacher-photo .photo-placeholder {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: rgba(70, 130, 180, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .teacher-info h3 {
@@ -538,7 +546,7 @@ body {
 }
 
 .support-section {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color:#9E98D6 ;
   border: 1px solid rgba(70, 130, 180, 0.2);
   padding: 30px;
   border-radius: 15px;
@@ -565,7 +573,7 @@ body {
 }
 
 .support-item {
-  background-color: rgba(70, 130, 180, 0.6);
+  background-color: #5B538C;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
