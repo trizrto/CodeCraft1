@@ -200,7 +200,7 @@ body {
 }
 
 .about-section {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
 }
 .foto-grupo{
@@ -1002,7 +1002,7 @@ footer {
   color: #FFFFFF;
   font-size: 14px;
   margin:0;
-  padding-top: 1px;
+  padding-bottom: 70px;
 }
 
 .cc {
