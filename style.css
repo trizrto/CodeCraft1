@@ -170,7 +170,7 @@ body {
 /* Main Content */
 .main-content {
  background: linear-gradient(135deg, #e6f3ff 0%, #D0D5EB 50%, #D0D5EB 100%);;
-  padding: 30px 5%;
+  padding: 30px 2%;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -183,8 +183,9 @@ body {
   grid-template-rows: auto auto;
   gap: 30px;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 2%;
 }
 
 .group-photo-section {
@@ -334,10 +335,10 @@ body {
   gap: 40px;
   margin-top: 30px;
   width: 100%;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 2%;
 }
 
 .presentation-main {
@@ -489,10 +490,10 @@ body {
   gap: 30px;
   margin-bottom: 40px;
   width: 100%;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 2%;
 }
 
 .teacher-card {
@@ -500,7 +501,7 @@ body {
   border: 1px solid rgba(70, 130, 180, 0.2);
   border-radius: 15px;
   padding: 25px;
-  margin: 15px; /* Adiciona margem entre os cards e as bordas */
+  margin: 0; /* Remove margin for better grid fitting */
   transition: transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -609,9 +610,9 @@ body {
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 5%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 2%;
 }
 
 .about-company {
