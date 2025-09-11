@@ -182,6 +182,9 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
   gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .group-photo-section {
@@ -192,11 +195,6 @@ body {
 .objectives-section {
   grid-column: 2;
   grid-row: 1;
-}
-
-.logo-section {
-  grid-column: 1;
-  grid-row: 2;
 }
 
 .about-section {
@@ -327,6 +325,7 @@ body {
 /* Presentation Page */
 .presentation-page {
   padding: 20px 0;
+  width: 100%;
 }
 
 .presentation-grid {
@@ -334,6 +333,11 @@ body {
   grid-template-columns: 2fr 1fr;
   gap: 40px;
   margin-top: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 
 .presentation-main {
@@ -476,13 +480,19 @@ body {
 /* Teachers Page */
 .teachers-page {
   padding: 20px 0;
+  width: 100%;
 }
 
 .teachers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Altera para 3 colunas */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 
 .teacher-card {
@@ -591,12 +601,17 @@ body {
 /* Company Page */
 .company-page {
   padding: 20px 0;
+  width: 100%;
 }
 
 .company-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
 .about-company {
@@ -1003,7 +1018,7 @@ footer {
   color: #FFFFFF;
   font-size: 14px;
   margin: 0;
-  padding-bottom: 0;
+  padding-bottom: ;
 }
 
 .cc {
@@ -1073,20 +1088,18 @@ footer {
 
 /* Medium Screens - 992px to 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    padding: 20px;
-  }
-
   .hero-content h1 {
     font-size: 2.8rem;
   }
 
   .content-grid-home {
     gap: 30px;
+    padding: 0 3%;
   }
 
   .presentation-grid {
     gap: 35px;
+    padding: 0 3%;
   }
 
   .photo-grid {
@@ -1098,19 +1111,15 @@ footer {
   }
 
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .achievements-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .teachers-grid {
@@ -1160,11 +1169,15 @@ footer {
   .content-grid-home {
     grid-template-columns: 1fr;
     gap: 25px;
+    max-width: 100%;
+    padding: 0 4%;
   }
 
   .presentation-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 100%;
+    padding: 0 4%;
   }
 
   .photo-grid {
@@ -1180,7 +1193,7 @@ footer {
   }
 
   .values-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .services-grid {
@@ -1188,23 +1201,26 @@ footer {
   }
 
   .achievements-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .teachers-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 4%;
   }
 
   .support-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .company-content {
+    max-width: 100%;
+    padding: 0 4%;
   }
 }
 
