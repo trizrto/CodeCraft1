@@ -993,16 +993,17 @@ footer {
 
 .footer-box {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 4px;
+  gap: 20px;
+  padding: 0 5%;
 }
 
 .copyright {
   color: #FFFFFF;
   font-size: 14px;
-  margin:0;
-  padding-bottom: 70px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .cc {
