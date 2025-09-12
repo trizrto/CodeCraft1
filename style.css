@@ -278,6 +278,13 @@ body {
 }
 
 .about-section {
+;  background-color: rgba(70, 130, 180, 0.7);
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  text-align: center
+}
+.patrulha{
   background-color: rgba(70, 130, 180, 0.7);
   padding: 25px;
   border-radius: 12px;
@@ -1003,7 +1010,8 @@ footer {
   background: #5B538C;
   padding: 20px 0;
   width: 100%;
-  margin-top: auto;
+  margin: auto;
+  padding: ;
 }
 
 .footer-box {
