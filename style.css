@@ -1034,13 +1034,44 @@ footer {
 .teachers-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 40px;
   width: 100%;
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
   padding: 0 2%;
+}
+
+/* Ajuste específico para cards da equipe */
+.teachers-page .teacher-card {
+  background-color: #9FCADA;
+  border: 1px solid rgba(70, 130, 180, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teachers-page .teacher-card .teacher-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.teachers-page .teacher-card .teacher-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.teachers-page .teacher-card .teacher-contact {
+  font-size: 0.8rem;
 }
 
 /*aumentar a largura do about section*/
