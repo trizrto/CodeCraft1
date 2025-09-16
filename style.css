@@ -1023,14 +1023,7 @@ body {
   font-weight: 500;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  background: #5B538C;
-  padding: 3px 0px;
-  width: 100%;
-  margin-top: auto;
-}
+/* Footer - Removido duplicada */
 
 .footer-box {
   display: flex;
@@ -1056,11 +1049,11 @@ footer {
   height: 8px;
 }
 
- /* pagina do time - Layout 5x5 para equipe */
+ /* pagina do time - Layout responsivo para equipe */
 .teachers-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-bottom: 40px;
   width: 100%;
   max-width: 100%;
@@ -1291,7 +1284,8 @@ footer {
   }
 
    .teachers-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
 
@@ -1434,7 +1428,8 @@ footer {
   }
 
   .teachers-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
 
@@ -1448,6 +1443,29 @@ footer {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
+  }
+
+  /* Melhor grid para telas muito pequenas */
+  .teachers-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  /* Cards menores em mobile */
+  .teacher-card {
+    padding: 15px;
+    margin: 10px 5px;
+  }
+
+  /* Texto menor em mobile */
+  .teacher-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .teacher-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .header {
@@ -1686,7 +1704,34 @@ footer {
 }
 
 /* Extra Small Devices - 240px to 319px */
+/* Telas muito pequenas */
 @media (max-width: 319px) {
+  .teachers-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .teacher-card {
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .teacher-info h3 {
+    font-size: 1rem;
+  }
+
+  .teacher-description {
+    font-size: 0.85rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
   .container {
     padding: 5px;
   }
