@@ -11,6 +11,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   background: linear-gradient(100deg, #f0f8ff 0%, #e6f3ff 50%, #f0f8ff 100%);
@@ -1433,13 +1444,17 @@ footer {
 /* Mobile Devices - 320px to 480px */
 @media (max-width: 480px) {
   .container {
-    padding: 10px;
+    padding: 0;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .header {
-    padding: 10px 15px;
-    margin-bottom: 15px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .menu-toggle {
@@ -1477,14 +1492,27 @@ footer {
   }
 
   .header-nav {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
     width: 100%;
   }
 
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
   .logo-colegio {
-    order: -1;
+    order: 1;
     align-self: center;
+    padding-left: 0;
+  }
+
+  .logo-colegio img {
+    max-width: 80px;
+    height: auto;
   }
 
   .hero-section {
@@ -1508,8 +1536,10 @@ footer {
   }
 
   .main-content {
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .content-grid-home {
@@ -1631,6 +1661,30 @@ footer {
   }
 }
 
+/* Ajustes adicionais para melhor responsividade */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 20px 10px;
+  }
+  
+  .page-header {
+    padding: 15px 10px;
+  }
+  
+  .teachers-grid,
+  .content-grid-home,
+  .presentation-grid {
+    padding: 0 10px;
+  }
+  
+  .teacher-card,
+  .project-item,
+  .objectives-section,
+  .logo-section {
+    margin: 0 5px 15px 5px;
+  }
+}
+
 /* Extra Small Devices - 240px to 319px */
 @media (max-width: 319px) {
   .container {
@@ -1705,12 +1759,21 @@ footer {
   .achievement-item {
     padding: 15px;
   }
+  .footer-box {
+    padding: 10px 5%;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
   .footer-box img {
-    width: 150px;
+    width: 120px;
+    margin-top: 20px;
   }
 
   .copyright {
-    font-size: 12px;
+    font-size: 11px;
+    order: 0;
   }
 }
 
