@@ -25,7 +25,7 @@ img {
 body {
   font-family: 'Quicksand', sans-serif;
   background: linear-gradient(100deg, #f0f8ff 0%, #e6f3ff 50%, #f0f8ff 100%);
-  color: #333;
+  color: #fdfcfc00;
   line-height: 1.6;
   min-height: 100vh;
   width: 100vw;
@@ -1225,7 +1225,9 @@ body {
   }
 
   .nav-menu.active {
-    display: flex !important;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-menu a {
@@ -1320,7 +1322,9 @@ body {
   }
 
   .nav-menu.active {
-    display: flex !important;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-menu a {
@@ -1433,40 +1437,6 @@ body {
 }
 
 /* Mobile Devices - 320px to 480px */
-@media (max-width: 768px) {
-  /* Mostrar menu hamburger em tablets e mobile */
-  .menu-toggle {
-    display: flex !important;
-  }
-
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(91, 83, 140, 0.95);
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
-    transition: all 0.3s ease;
-    z-index: 1000;
-  }
-
-  .nav-menu.active {
-    display: flex !important;
-  }
-
-  .nav-menu a {
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-  }
-}
-
 @media (max-width: 480px) {
   .container {
     padding: 0;
@@ -1475,22 +1445,7 @@ body {
     overflow-x: hidden;
   }
 
-  /* Grids responsivos para mobile */
-  .content-grid-home {
-    grid-template-columns: 1fr !important;
-    gap: 15px;
-  }
-
-  .presentation-grid {
-    grid-template-columns: 1fr !important;
-    gap: 15px;
-  }
-
-  .photo-grid {
-    grid-template-columns: 1fr !important;
-    gap: 15px;
-  }
-
+  /* Melhor grid para telas muito pequenas */
   .teachers-grid {
     grid-template-columns: 1fr !important;
     gap: 15px;
@@ -1541,7 +1496,9 @@ body {
   }
 
   .nav-menu.active {
-    display: flex !important;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-menu a {
