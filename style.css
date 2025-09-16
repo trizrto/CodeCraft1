@@ -1025,11 +1025,11 @@ body {
 
 /* Footer */
 footer {
+  text-align: center;
   background: #5B538C;
-  padding: 20px 0;
+  padding: 3px 0px;
   width: 100%;
-  margin: auto;
-  padding: ;
+  margin-top: auto;
 }
 
 .footer-box {
