@@ -1069,7 +1069,6 @@ footer {
   min-height: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .teachers-page .teacher-card .teacher-info h3 {
@@ -1082,6 +1081,7 @@ footer {
   font-size: 0.85rem;
   line-height: 1.4;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .teachers-page .teacher-card .teacher-contact {
